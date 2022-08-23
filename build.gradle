@@ -10,10 +10,25 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    //TestNG
+    testImplementation group: 'org.testng', name: 'testng', version: '7.5'
+
+    //Selenium
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.3.0'
+
+    //Browser
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.2.2'
+
+    //Extent Report
+    testImplementation 'com.relevantcodes:extentreports:2.41.2'
+
+    //POI
+    testImplementation 'org.apache.poi:poi:5.2.2'
+    testImplementation 'org.apache.poi:poi-ooxml:5.2.2'
+
+
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }

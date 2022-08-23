@@ -1,29 +1,22 @@
 package com.pages;
 
 import com.base.BaseTest;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class OrderConfirmationPage extends BaseTest {
+public class OrderDetailsPage extends BaseTest {
     @FindBy(id="finish")
     WebElement finishBtnEl;
 
-
-    public CheckoutPage() {
+    public OrderDetailsPage() {
         PageFactory.initElements(driver, this);
     }
 
-    public CheckoutPage insertFirstName(String firstName){
-        firstNameEl.isDisplayed();
-        firstNameEl.sendKeys(firstName);
-        return this;
-    }
-
-    public CheckoutPage insertLastName(String lastName){
-        lastNameEl.isDisplayed();
-        lastNameEl.sendKeys(lastName);
-        return this;
+    public OrderConfirmationPage scrollAndClickOnFinishBtn(){
+        scrollToBottom();
+        finishBtnEl.isDisplayed();
+        finishBtnEl.click();
+        return new OrderConfirmationPage();
     }
 }
