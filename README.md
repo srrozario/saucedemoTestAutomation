@@ -1,5 +1,5 @@
-# Page Object model Test automation framework using Selenium with Java, TestNG and Maven
-This is a sample project to demonstrate what is Selenium WebDriver Framework with Page Object Model with Page Factory design pattern. This framework is created with Selenium WebDriver (Java), Maven, TestNG, WebDriverManager, Extent Reports.
+# Page Object model Test automation framework using Selenium with Java, TestNG and Gradle
+This is a sample project to demonstrate what is Selenium WebDriver Framework with Page Object Model with Page Factory design pattern. This framework is created with Selenium WebDriver (Java), Gradle, TestNG, WebDriverManager, Extent Reports.
 
 ## Prerequisite software
 - [Download & Install JDK](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
