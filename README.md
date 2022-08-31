@@ -12,7 +12,7 @@ This is a sample project to demonstrate what is Selenium WebDriver Framework wit
 - [Setting the JAVA_HOME Variable in Windows](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html)
 
 ## Dependencies
-#### Gradle Dependencies - This framework has been designed with following maven dependencies as defined further in the build.gradle
+#### Gradle Dependencies - This framework has been designed with following gradle dependencies as defined further in the build.gradle
 | Dependency         | Version |  Purpose   |
 |--------------------|---------|-----|
 | Selenium WebDriver | 4.3.0   | It automates the testing of web application.    |
